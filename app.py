@@ -66,7 +66,7 @@ def nearby_cities():
 
     def distance(lat1, lon1, lat2, lon2):
         from math import radians, cos, sin, sqrt, atan2
-        R = 6371  # Radius of Earth in kilometers
+        R = 6371
         dlat = radians(lat2 - lat1)
         dlon = radians(lon2 - lon1)
         a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2

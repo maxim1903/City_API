@@ -21,44 +21,42 @@
 
 1. **Клонируйте репозиторий:**
 
-   ```bash
-   git clone https://github.com/maxim1903/CITY_API.git
+   ```[
+   bash
+   git clone https://github.com/maxim1903/City_API.git
    cd city_api
 
 2. **Установка зависимости:**
-    ```pip install Flask requests
+    ```[
+    pip install Flask requests
 
 ## Запуск приложения
 
 1. **Запустите сервер Flask:**
-    ```python app.py
+    ```[
+    python app.py
 
 ## Использование API
 1. **Добавлять города в базу данных**:
-    ```curl -X POST http://127.0.0.1:5000/city -H "Content-Type: application/json" -d '{"name": "Moscow"}'
+    ```[
+    curl -X POST http://127.0.0.1:5000/city -H "Content-Type: application/json" -d '{"name": "Moscow"}'
 
 2. **Пример ответа:**
     ```[
-    {
-      "message": "City added successfully"
-    }
-   ]   
+      "message": "City added successfully"  
 
 3. **Удаление города:**
-    ```curl -X DELETE http://127.0.0.1:5000/city -H "Content-Type: application/json" -d '{"name": "Moscow"}'
+    ```[
+    curl -X DELETE http://127.0.0.1:5000/city -H "Content-Type: application/json" -d '{"name": "Moscow"}'
 
 4. **Ответ на удаление:**
     ```[
-    {
-  "message": "City removed successfully"
-    }
-   ]
+     "message": "City removed successfully"
 
 5. **Получение списка всех городов:**
     ```[
       curl http://127.0.0.1:5000/cities
 
-   ]
-
 6. **Поиск ближайших городов:**
-    ```curl "http://127.0.0.1:5000/cities/nearby?latitude=55.7558&longitude=37.6173"
+    ```[
+    curl "http://127.0.0.1:5000/cities/nearby?latitude=55.7558&longitude=37.6173"
